@@ -1,12 +1,21 @@
 # Ordem e Regresso
 
-Jogo de debate eleitoral para jogar presencialmente com os amigos, direto do celular.
+Jogo de debate eleitoral para jogar presencialmente com os amigos, num celular só.
 
-Cada rodada sorteia uma crise política para o país. Os candidatos recebem uma proposta aleatória e precisam convencer os eleitores de que ela resolve tudo. Depois a mesa vota, em aberto ou na urna secreta, e quem chegar primeiro à meta de votos é eleito.
+Cada rodada sorteia uma crise para o país. Os candidatos recebem uma proposta e precisam convencer os eleitores de que ela resolve tudo. Cada voto é um passo do boneco no tabuleiro; quem chegar primeiro à meta é eleito.
 
-- 121 crises e 280 propostas no baralho padrão
-- Cartas personalizadas da galera pelo menu Baralho
-- Timer de fala, votação aberta ou urna eletrônica, placar
-- Funciona offline depois de aberto e salva a partida no aparelho
+## Baralhos de crise
 
-Para editar as cartas padrão, altere as listas `DEF_CRISES` e `DEF_PROPS` no `index.html`.
+- **Brasil de hoje** (121 cartas): problemas do país, com propostas de zoeira.
+- **Geopolítica** (62): disputas internacionais atuais, com propostas sérias.
+- **História do Brasil** (45): crises reais de 1822 até hoje, com propostas sérias.
+- **Guerras e crises mundiais** (40): momentos decisivos do século 20 e 21, com propostas sérias.
+- **Da galera**: crises criadas pelos jogadores no menu.
+
+O tom das propostas pode ser automático (cada baralho com o seu), só zoeira, só sério ou misturado.
+
+## Arquivos
+
+- `index.html`: o jogo.
+- `decks.js`: crises e propostas. Para editar as cartas, altere este arquivo.
+- `pawns.js`: bonecos dos jogadores.
